@@ -5,7 +5,7 @@ from behave import *
 @given('the URL with {name}')
 def step_impl(context, name):
     context.name = name
-    context.url = "http://172.21.0.3:5000/hello/" + context.name
+    context.url = "http://backend:5000/hello/" + context.name
 
 
 @when('we consume the endpoint')
