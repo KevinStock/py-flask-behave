@@ -1,5 +1,5 @@
 import flask
-import json
+from flask import jsonify
 
 app = flask.Flask(__name__)
 
@@ -10,7 +10,7 @@ def hello(name):
         "greeting": 'Hello',
         "name": name
     }
-    return json.dumps(message)
+    return jsonify(message)
 
 
 if __name__ == '__main__':
