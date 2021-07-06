@@ -15,8 +15,13 @@ def step_impl(context):
 
 @then('json response is retrieved with right data and 200 as status code')
 def step_impl(context):
-    print(context.url)
-    assert context.response.status_code == 200, "Response code is difference: %s" % context.response.status_code + \
-                                                "Error: " + str(context.response.content)
+    #positive test
+    assert context.response.status_code == 200, "Response code is different: %s" % context.response.status_code
+    #negative test
+    #assert context.response.status_code == 404, "Response code is different: %s" % context.response.status_code
+
+    #positive test
     json_response = context.response.json()
+    #negative test
+    #json_response = {'greeting': 'empty', 'name': 'empty'}
     assert json_response['name'] == context.name, 'Data is not the expected one: %s' % json_response['name']
