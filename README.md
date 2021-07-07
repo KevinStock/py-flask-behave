@@ -13,7 +13,7 @@ Demonstration of microservice using Python, Flask, Behave, and Docker
 6. `sudo chmod +x /usr/local/bin/docker-compose` Apply executale permissions to the binary
 7. `docker-compose --version` Test the installation
 
-## Execute Micro Service
+## Execute Microservice
 
 Run `docker-compose up` to start
 
