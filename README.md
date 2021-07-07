@@ -2,12 +2,8 @@
 Demonstration of microservice using Python, Flask, Behave, and Docker
 
 ## Install Dependencies
-Docker Engine
-
-Uninstall old versions
-`sudo apt-get remove docker docker-engine docker.io containerd runc`
-
-Install using the repository
+### Docker / Docker Compose
+1. `sudo apt-get remove docker docker-engine docker.io containerd runc` Uninstall old versions
 1. `sudo apt-get update` Update apt package index
 2. `sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release` Install packages to allow apt to use a repository over HTTPS
 3. `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg` Add Docker's official GPG key
